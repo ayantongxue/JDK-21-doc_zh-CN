@@ -28,17 +28,17 @@ loadScripts(document, 'script');</script>
 <div class="skip-nav"><a href="#skip-navbar-top" title="Skip navigation links">Skip navigation links</a></div>
 <div class="about-language"><div style="margin-top: 14px;"><strong>Java SE 21 &amp; JDK 21</strong> </div></div>
 <ul id="navbar-top-firstrow" class="nav-list" title="Navigation">
-<li class="nav-bar-cell1-rev">Overview</li>
-<li>Module</li>
-<li>Package</li>
-<li>Class</li>
-<li>Use</li>
-<li><a href="overview-tree.html">Tree</a></li>
-<li><a href="preview-list.html">Preview</a></li>
-<li><a href="new-list.html">New</a></li>
-<li><a href="deprecated-list.html">Deprecated</a></li>
-<li><a href="index-files/index-1.html">Index</a></li>
-<li><a href="help-doc.html#overview">Help</a></li>
+<li class="nav-bar-cell1-rev">概述</li>
+<li>模块</li>
+<li>包</li>
+<li>类</li>
+<li>使用</li>
+<li><a href="overview-tree.html">树</a></li>
+<li><a href="preview-list.html">预览功能</a></li>
+<li><a href="new-list.html">新特性</a></li>
+<li><a href="deprecated-list.html">已弃用</a></li>
+<li><a href="index-files/index-1.html">索引</a></li>
+<li><a href="help-doc.html#overview">帮助</a></li>
 </ul>
 </div>
 <div class="sub-nav">
@@ -54,280 +54,279 @@ loadScripts(document, 'script');</script>
 <div class="flex-content">
 <main role="main">
 <div class="header">
-<h1 class="title">Java<sup>&reg;</sup> Platform, Standard Edition &amp;&nbsp;Java&nbsp;Development&nbsp;Kit<br>Version 21 API Specification</h1>
+<h1 class="title">Java<sup>&reg;</sup> 平台, 标准版 &amp;&nbsp;Java开发组件<br>21版本API说明</h1>
 </div>
-<div class="block"><p>This document is divided into two sections:</p> <blockquote><dl>   <dt style="margin-top: 8px;">Java SE</dt> <dd style="margin-top: 8px;">The Java Platform, Standard Edition (Java SE) APIs define the core Java platform for general-purpose computing. These APIs are in modules whose names start with <code>java</code>. </dd>   <dt style="margin-top: 8px;">JDK</dt> <dd style="margin-top: 8px;">The Java Development Kit (JDK) APIs are specific to the JDK and will not necessarily be available in all implementations of the Java SE Platform. These APIs are in modules whose names start with <code>jdk</code>. </dd>  </dl></blockquote></div>
+<div class="block"><p>本文件分为两部分：</p> <blockquote><dl>   <dt style="margin-top: 8px;">Java SE</dt> <dd style="margin-top: 8px;">Java平台标准版（Java SE）API定义了通用计算的核心Java平台。这些API位于名称以开头的模块中<code>java</code>. </dd>   <dt style="margin-top: 8px;">JDK</dt> <dd style="margin-top: 8px;">Java开发工具包（JDK）API是特定于JDK的，不一定在Java SE平台的所有实现中都可用。这些API位于名称以开头的模块中 <code>jdk</code>. </dd>  </dl></blockquote></div>
 <div id="all-modules-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="all-modules-table-tab0" role="tab" aria-selected="true" aria-controls="all-modules-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('all-modules-table', 'all-modules-table', 2)" class="active-table-tab">All Modules</button><button id="all-modules-table-tab1" role="tab" aria-selected="false" aria-controls="all-modules-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('all-modules-table', 'all-modules-table-tab1', 2)" class="table-tab">Java SE</button><button id="all-modules-table-tab2" role="tab" aria-selected="false" aria-controls="all-modules-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('all-modules-table', 'all-modules-table-tab2', 2)" class="table-tab">JDK</button><button id="all-modules-table-tab3" role="tab" aria-selected="false" aria-controls="all-modules-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('all-modules-table', 'all-modules-table-tab3', 2)" class="table-tab">Other Modules</button></div>
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="all-modules-table-tab0" role="tab" aria-selected="true" aria-controls="all-modules-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('all-modules-table', 'all-modules-table', 2)" class="active-table-tab">全部模块</button><button id="all-modules-table-tab1" role="tab" aria-selected="false" aria-controls="all-modules-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('all-modules-table', 'all-modules-table-tab1', 2)" class="table-tab">Java SE</button><button id="all-modules-table-tab2" role="tab" aria-selected="false" aria-controls="all-modules-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('all-modules-table', 'all-modules-table-tab2', 2)" class="table-tab">JDK</button><button id="all-modules-table-tab3" role="tab" aria-selected="false" aria-controls="all-modules-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('all-modules-table', 'all-modules-table-tab3', 2)" class="table-tab">其他模块</button></div>
 <div id="all-modules-table.tabpanel" role="tabpanel">
 <div class="summary-table two-column-summary" aria-labelledby="all-modules-table-tab0">
-<div class="table-header col-first">Module</div>
-<div class="table-header col-last">Description</div>
+<div class="table-header col-first">模块</div>
+<div class="table-header col-last">描述</div>
 <div class="col-first even-row-color all-modules-table all-modules-table-tab1"><a href="java.base/module-summary.html">java.base</a></div>
 <div class="col-last even-row-color all-modules-table all-modules-table-tab1">
-<div class="block">Defines the foundational APIs of the Java SE Platform.</div>
+<div class="block">定义Java SE平台的基本API。</div>
 </div>
 <div class="col-first odd-row-color all-modules-table all-modules-table-tab1"><a href="java.compiler/module-summary.html">java.compiler</a></div>
 <div class="col-last odd-row-color all-modules-table all-modules-table-tab1">
-<div class="block">Defines the Language Model, Annotation Processing, and
- Java Compiler APIs.</div>
+<div class="block">定义语言模型、注释处理和
+    Java编译器API。</div>
 </div>
 <div class="col-first even-row-color all-modules-table all-modules-table-tab1"><a href="java.datatransfer/module-summary.html">java.datatransfer</a></div>
 <div class="col-last even-row-color all-modules-table all-modules-table-tab1">
-<div class="block">Defines the API for transferring data between and within applications.</div>
+<div class="block">定义用于在应用程序之间和应用程序内部传输数据的API。</div>
 </div>
 <div class="col-first odd-row-color all-modules-table all-modules-table-tab1"><a href="java.desktop/module-summary.html">java.desktop</a></div>
 <div class="col-last odd-row-color all-modules-table all-modules-table-tab1">
-<div class="block">Defines the AWT and Swing user interface toolkits, plus APIs for
- accessibility, audio, imaging, printing, and JavaBeans.</div>
+<div class="block">定义 AWT 和 Swing 用户界面工具包，以及用于
+ 辅助功能、音频、成像、打印和 JavaBeans。</div>
 </div>
 <div class="col-first even-row-color all-modules-table all-modules-table-tab1"><a href="java.instrument/module-summary.html">java.instrument</a></div>
 <div class="col-last even-row-color all-modules-table all-modules-table-tab1">
-<div class="block">Defines services that allow agents to
- instrument programs running on the JVM.</div>
+<div class="block">定义允许代理
+ 检测在 JVM 上运行的程序。</div>
 </div>
 <div class="col-first odd-row-color all-modules-table all-modules-table-tab1"><a href="java.logging/module-summary.html">java.logging</a></div>
 <div class="col-last odd-row-color all-modules-table all-modules-table-tab1">
-<div class="block">Defines the Java Logging API.</div>
+<div class="block">定义 Java 日志记录 API。</div>
 </div>
 <div class="col-first even-row-color all-modules-table all-modules-table-tab1"><a href="java.management/module-summary.html">java.management</a></div>
 <div class="col-last even-row-color all-modules-table all-modules-table-tab1">
-<div class="block">Defines the Java Management Extensions (JMX) API.</div>
+<div class="block">定义 Java 管理扩展 （JMX） API。</div>
 </div>
 <div class="col-first odd-row-color all-modules-table all-modules-table-tab1"><a href="java.management.rmi/module-summary.html">java.management.rmi</a></div>
 <div class="col-last odd-row-color all-modules-table all-modules-table-tab1">
-<div class="block">Defines the <a href="java.management.rmi/javax/management/remote/rmi/package-summary.html">RMI connector</a>
- for the Java Management Extensions (JMX) Remote API.</div>
+<div class="block">定义<a href="java.management.rmi/javax/management/remote/rmi/package-summary.html">RMI 连接器</a>
+用于 Java 管理扩展 （JMX） 远程 API。</div>
 </div>
 <div class="col-first even-row-color all-modules-table all-modules-table-tab1"><a href="java.naming/module-summary.html">java.naming</a></div>
 <div class="col-last even-row-color all-modules-table all-modules-table-tab1">
-<div class="block">Defines the Java Naming and Directory Interface (JNDI) API.</div>
+<div class="block">定义 Java 命名和目录接口 （JNDI） API。</div>
 </div>
 <div class="col-first odd-row-color all-modules-table all-modules-table-tab1"><a href="java.net.http/module-summary.html">java.net.http</a></div>
 <div class="col-last odd-row-color all-modules-table all-modules-table-tab1">
-<div class="block">Defines the HTTP Client and WebSocket APIs.</div>
+<div class="block">定义 HTTP 客户端和 WebSocket API。</div>
 </div>
 <div class="col-first even-row-color all-modules-table all-modules-table-tab1"><a href="java.prefs/module-summary.html">java.prefs</a></div>
 <div class="col-last even-row-color all-modules-table all-modules-table-tab1">
-<div class="block">Defines the Preferences API.</div>
+<div class="block">定义首选项 API。</div>
 </div>
 <div class="col-first odd-row-color all-modules-table all-modules-table-tab1"><a href="java.rmi/module-summary.html">java.rmi</a></div>
 <div class="col-last odd-row-color all-modules-table all-modules-table-tab1">
-<div class="block">Defines the Remote Method Invocation (RMI) API.</div>
+<div class="block">定义远程方法调用 （RMI） API。</div>
 </div>
 <div class="col-first even-row-color all-modules-table all-modules-table-tab1"><a href="java.scripting/module-summary.html">java.scripting</a></div>
 <div class="col-last even-row-color all-modules-table all-modules-table-tab1">
-<div class="block">Defines the Scripting API.</div>
+<div class="block">定义脚本 API。</div>
 </div>
 <div class="col-first odd-row-color all-modules-table all-modules-table-tab1"><a href="java.se/module-summary.html">java.se</a></div>
 <div class="col-last odd-row-color all-modules-table all-modules-table-tab1">
-<div class="block">Defines the API of the Java SE Platform.</div>
+<div class="block">定义 Java SE 平台的 API。</div>
 </div>
 <div class="col-first even-row-color all-modules-table all-modules-table-tab1"><a href="java.security.jgss/module-summary.html">java.security.jgss</a></div>
 <div class="col-last even-row-color all-modules-table all-modules-table-tab1">
-<div class="block">Defines the Java binding of the IETF Generic Security Services API (GSS-API).</div>
+<div class="block">定义 IETF 通用安全服务 API （GSS-API） 的 Java 绑定。</div>
 </div>
 <div class="col-first odd-row-color all-modules-table all-modules-table-tab1"><a href="java.security.sasl/module-summary.html">java.security.sasl</a></div>
 <div class="col-last odd-row-color all-modules-table all-modules-table-tab1">
-<div class="block">Defines Java support for the IETF Simple Authentication and Security Layer
- (SASL).</div>
+<div class="block">定义 IETF 简单身份验证和安全层的 Java 支持
+ （SASL）。</div>
 </div>
 <div class="col-first even-row-color all-modules-table all-modules-table-tab3"><a href="java.smartcardio/module-summary.html">java.smartcardio</a></div>
 <div class="col-last even-row-color all-modules-table all-modules-table-tab3">
-<div class="block">Defines the Java Smart Card I/O API.</div>
+<div class="block">定义 Java 智能卡 I/O API。</div>
 </div>
 <div class="col-first odd-row-color all-modules-table all-modules-table-tab1"><a href="java.sql/module-summary.html">java.sql</a></div>
 <div class="col-last odd-row-color all-modules-table all-modules-table-tab1">
-<div class="block">Defines the JDBC API.</div>
+<div class="block">定义 JDBC API。</div>
 </div>
 <div class="col-first even-row-color all-modules-table all-modules-table-tab1"><a href="java.sql.rowset/module-summary.html">java.sql.rowset</a></div>
 <div class="col-last even-row-color all-modules-table all-modules-table-tab1">
-<div class="block">Defines the JDBC RowSet API.</div>
+<div class="block">定义 JDBC RowSet API。</div>
 </div>
 <div class="col-first odd-row-color all-modules-table all-modules-table-tab1"><a href="java.transaction.xa/module-summary.html">java.transaction.xa</a></div>
 <div class="col-last odd-row-color all-modules-table all-modules-table-tab1">
-<div class="block">Defines an API for supporting distributed transactions in JDBC.</div>
+<div class="block">定义用于支持 JDBC 中的分布式事务的 API。</div>
 </div>
 <div class="col-first even-row-color all-modules-table all-modules-table-tab1"><a href="java.xml/module-summary.html">java.xml</a></div>
 <div class="col-last even-row-color all-modules-table all-modules-table-tab1">
-<div class="block">Defines the Java APIs for XML Processing (JAXP).</div>
+<div class="block">定义用于 XML 处理 （JAXP） 的 Java API。</div>
 </div>
 <div class="col-first odd-row-color all-modules-table all-modules-table-tab1"><a href="java.xml.crypto/module-summary.html">java.xml.crypto</a></div>
 <div class="col-last odd-row-color all-modules-table all-modules-table-tab1">
-<div class="block">Defines the API for XML cryptography.</div>
+<div class="block">定义用于 XML 加密的 API。</div>
 </div>
 <div class="col-first even-row-color all-modules-table all-modules-table-tab2"><a href="jdk.accessibility/module-summary.html">jdk.accessibility</a></div>
 <div class="col-last even-row-color all-modules-table all-modules-table-tab2">
-<div class="block">Defines JDK utility classes used by implementors of Assistive Technologies.</div>
+<div class="block">定义辅助技术实现者使用的 JDK 实用工具类。</div>
 </div>
 <div class="col-first odd-row-color all-modules-table all-modules-table-tab2"><a href="jdk.attach/module-summary.html">jdk.attach</a></div>
 <div class="col-last odd-row-color all-modules-table all-modules-table-tab2">
-<div class="block">Defines the attach API.</div>
+<div class="block">定义附加 API。</div>
 </div>
 <div class="col-first even-row-color all-modules-table all-modules-table-tab2"><a href="jdk.charsets/module-summary.html">jdk.charsets</a></div>
 <div class="col-last even-row-color all-modules-table all-modules-table-tab2">
-<div class="block">Provides <a href="java.base/java/nio/charset/Charset.html" title="class in java.nio.charset"><code>charsets</code></a> that
- are not in <code>java.base</code> (mostly double byte and IBM charsets).</div>
+<div class="block">提供不在<code>java.base</code>中的<a href="java.base/java/nio/charset/Charset.html" title="class in java.nio.charset"><code>字符集</code></a> (mostly double byte and IBM charsets).</div>
 </div>
 <div class="col-first odd-row-color all-modules-table all-modules-table-tab2"><a href="jdk.compiler/module-summary.html">jdk.compiler</a></div>
 <div class="col-last odd-row-color all-modules-table all-modules-table-tab2">
-<div class="block">Defines the implementation of the
- <a href="java.compiler/javax/tools/ToolProvider.html#getSystemJavaCompiler()">system Java compiler</a>
- and its command line equivalent, <em>javac</em>.</div>
+<div class="block">定义
+ <a href="java.compiler/javax/tools/ToolProvider.html#getSystemJavaCompiler()">系统 Java 编译器</a>
+ 及其命令行等效项， <em>javac</em>.</div>
 </div>
 <div class="col-first even-row-color all-modules-table all-modules-table-tab2"><a href="jdk.crypto.cryptoki/module-summary.html">jdk.crypto.cryptoki</a></div>
 <div class="col-last even-row-color all-modules-table all-modules-table-tab2">
-<div class="block">Provides the implementation of the SunPKCS11 security provider.</div>
+<div class="block">提供 SunPKCS11 安全提供程序的实现。</div>
 </div>
 <div class="col-first odd-row-color all-modules-table all-modules-table-tab2"><a href="jdk.crypto.ec/module-summary.html">jdk.crypto.ec</a></div>
 <div class="col-last odd-row-color all-modules-table all-modules-table-tab2">
-<div class="block">Provides the implementation of the SunEC security provider.</div>
+<div class="block">提供 SunEC 安全提供程序的实现。</div>
 </div>
 <div class="col-first even-row-color all-modules-table all-modules-table-tab2"><a href="jdk.dynalink/module-summary.html">jdk.dynalink</a></div>
 <div class="col-last even-row-color all-modules-table all-modules-table-tab2">
-<div class="block">Defines the API for dynamic linking of high-level operations on objects.</div>
+<div class="block">定义用于动态链接对象高级操作的 API。</div>
 </div>
 <div class="col-first odd-row-color all-modules-table all-modules-table-tab2"><a href="jdk.editpad/module-summary.html">jdk.editpad</a></div>
 <div class="col-last odd-row-color all-modules-table all-modules-table-tab2">
-<div class="block">Provides the implementation of the edit pad service used by <a href="jdk.jshell/jdk/jshell/package-summary.html"><code>jdk.jshell</code></a>.</div>
+<div class="block">提供由使用的编辑板服务的实现 <a href="jdk.jshell/jdk/jshell/package-summary.html"><code>jdk.jshell</code></a>.</div>
 </div>
 <div class="col-first even-row-color all-modules-table all-modules-table-tab2"><a href="jdk.hotspot.agent/module-summary.html">jdk.hotspot.agent</a></div>
 <div class="col-last even-row-color all-modules-table all-modules-table-tab2">
-<div class="block">Defines the implementation of the HotSpot Serviceability Agent.</div>
+<div class="block">定义HotSpot Serviceability Agent的实现。</div>
 </div>
 <div class="col-first odd-row-color all-modules-table all-modules-table-tab2"><a href="jdk.httpserver/module-summary.html">jdk.httpserver</a></div>
 <div class="col-last odd-row-color all-modules-table all-modules-table-tab2">
-<div class="block">Defines the JDK-specific HTTP server API, and provides the jwebserver tool
- for running a minimal HTTP server.</div>
+<div class="block">定义特定于JDK的HTTP服务器API，并提供jwebserver工具
+用于运行最小的HTTP服务器。</div>
 </div>
 <div class="col-first even-row-color all-modules-table all-modules-table-tab2"><a href="jdk.incubator.vector/module-summary.html">jdk.incubator.vector</a></div>
 <div class="col-last even-row-color all-modules-table all-modules-table-tab2">
-<div class="block">Defines an API for expressing computations that can be reliably compiled
- at runtime into SIMD instructions, such as AVX instructions on x64, and
- NEON instructions on AArch64.</div>
+<div class="block">定义一个API，用于表示可以可靠编译的计算
+在运行时转换为SIMD指令，例如x64上的AVX指令，以及
+AArch64上的NEON说明。</div>
 </div>
 <div class="col-first odd-row-color all-modules-table all-modules-table-tab2"><a href="jdk.jartool/module-summary.html">jdk.jartool</a></div>
 <div class="col-last odd-row-color all-modules-table all-modules-table-tab2">
-<div class="block">Defines tools for manipulating Java Archive (JAR) files,
- including the <em>jar</em> and
- <em>jarsigner</em> tools.</div>
+<div class="block">定义了用于操作Java Archive（JAR）文件的工具，
+包括<em>jar</em>和
+<em>jarsigner</em>工具。</div>
 </div>
 <div class="col-first even-row-color all-modules-table all-modules-table-tab2"><a href="jdk.javadoc/module-summary.html">jdk.javadoc</a></div>
 <div class="col-last even-row-color all-modules-table all-modules-table-tab2">
-<div class="block">Defines the implementation of the
- <a href="java.compiler/javax/tools/ToolProvider.html#getSystemDocumentationTool()">system documentation tool</a>
- and its command-line equivalent, <em>javadoc</em>.</div>
+<div class="block">定义的实现
+ <a href="java.compiler/javax/tools/ToolProvider.html#getSystemDocumentationTool()">系统文档工具</a>
+ 以及它的命令行等价物，<em>javadoc</em>。</div>
 </div>
 <div class="col-first odd-row-color all-modules-table all-modules-table-tab2"><a href="jdk.jcmd/module-summary.html">jdk.jcmd</a></div>
 <div class="col-last odd-row-color all-modules-table all-modules-table-tab2">
-<div class="block">Defines tools for diagnostics and troubleshooting a JVM
- such as the <em>jcmd</em>, <em>jps</em>,
- <em>jstat</em> tools.</div>
+<div class="block">定义JVM的诊断和故障排除工具
+如<em>jcmd</em>、<em>jps</em>，
+<em>jstat</em>工具。</div>
 </div>
 <div class="col-first even-row-color all-modules-table all-modules-table-tab2"><a href="jdk.jconsole/module-summary.html">jdk.jconsole</a></div>
 <div class="col-last even-row-color all-modules-table all-modules-table-tab2">
-<div class="block">Defines the JMX graphical tool, <em>jconsole</em>,
- for monitoring and managing a running application.</div>
+<div class="block">定义了JMX图形工具jconsole</em>，
+用于监视和管理正在运行的应用程序。</div>
 </div>
 <div class="col-first odd-row-color all-modules-table all-modules-table-tab2"><a href="jdk.jdeps/module-summary.html">jdk.jdeps</a></div>
 <div class="col-last odd-row-color all-modules-table all-modules-table-tab2">
-<div class="block">Defines tools for analysing dependencies in Java libraries and programs,
- including the <em>jdeps</em>,
- <em>javap</em>, and
- <em>jdeprscan</em> tools.</div>
+<div class="block">定义用于分析Java库和程序中的依赖关系的工具，
+包括<em>jdeps</em>，
+<em>javap</em>，以及
+<em>jdeprscan</em>工具。</div>
 </div>
 <div class="col-first even-row-color all-modules-table all-modules-table-tab2"><a href="jdk.jdi/module-summary.html">jdk.jdi</a></div>
 <div class="col-last even-row-color all-modules-table all-modules-table-tab2">
-<div class="block">Defines the Java Debug Interface.</div>
+<div class="block">定义Java调试接口。</div>
 </div>
 <div class="col-first odd-row-color all-modules-table all-modules-table-tab2"><a href="jdk.jdwp.agent/module-summary.html">jdk.jdwp.agent</a></div>
 <div class="col-last odd-row-color all-modules-table all-modules-table-tab2">
-<div class="block">Provides the implementation of the Java Debug Wire Protocol (JDWP) agent.</div>
+<div class="block">提供Java Debug Wire Protocol（JDWP）代理的实现。</div>
 </div>
 <div class="col-first even-row-color all-modules-table all-modules-table-tab2"><a href="jdk.jfr/module-summary.html">jdk.jfr</a></div>
 <div class="col-last even-row-color all-modules-table all-modules-table-tab2">
-<div class="block">Defines the API for JDK Flight Recorder.</div>
+<div class="block">定义JDK飞行记录器的API。</div>
 </div>
 <div class="col-first odd-row-color all-modules-table all-modules-table-tab2"><a href="jdk.jlink/module-summary.html">jdk.jlink</a></div>
 <div class="col-last odd-row-color all-modules-table all-modules-table-tab2">
-<div class="block">Defines the <em>jlink</em> tool for creating run-time
- images, the <em>jmod</em> tool for creating and manipulating
- JMOD files, and the <em>jimage</em> tool for inspecting
- the JDK implementation-specific container file for classes and resources.</div>
+<div class="block">定义用于创建运行时的<em>jlink</em>工具
+images，用于创建和操作的<em>jmod</em>工具
+JMOD文件，以及用于检查的<em>jimage</em>工具
+JDK实现特定于类和资源的容器文件。</div>
 </div>
 <div class="col-first even-row-color all-modules-table all-modules-table-tab2"><a href="jdk.jpackage/module-summary.html">jdk.jpackage</a></div>
 <div class="col-last even-row-color all-modules-table all-modules-table-tab2">
-<div class="block">Defines the Java Packaging tool, jpackage.</div>
+<div class="block">定义Java打包工具jpackage。</div>
 </div>
 <div class="col-first odd-row-color all-modules-table all-modules-table-tab2"><a href="jdk.jshell/module-summary.html">jdk.jshell</a></div>
 <div class="col-last odd-row-color all-modules-table all-modules-table-tab2">
-<div class="block">Provides the <em>jshell</em> tool for evaluating
- snippets of Java code, and defines a JDK-specific API for modeling and
- executing snippets.</div>
+<div class="block">提供<em>jshell</em>工具用于评估
+Java代码片段，并定义了一个特定于JDK的API，用于建模和
+执行片段。</div>
 </div>
 <div class="col-first even-row-color all-modules-table all-modules-table-tab2"><a href="jdk.jsobject/module-summary.html">jdk.jsobject</a></div>
 <div class="col-last even-row-color all-modules-table all-modules-table-tab2">
-<div class="block">Defines the API for the JavaScript Object.</div>
+<div class="block">定义JavaScript对象的API。</div>
 </div>
 <div class="col-first odd-row-color all-modules-table all-modules-table-tab2"><a href="jdk.jstatd/module-summary.html">jdk.jstatd</a></div>
 <div class="col-last odd-row-color all-modules-table all-modules-table-tab2">
-<div class="block">Defines the <em>jstatd</em> tool for starting a daemon
- for the jstat tool to monitor JVM statistics remotely.</div>
+<div class="block">定义用于启动守护程序的<em>jstatd</em>工具
+用于jstat工具远程监视JVM统计信息。</div>
 </div>
 <div class="col-first even-row-color all-modules-table all-modules-table-tab2"><a href="jdk.localedata/module-summary.html">jdk.localedata</a></div>
 <div class="col-last even-row-color all-modules-table all-modules-table-tab2">
-<div class="block">Provides the locale data for locales other than <a href="java.base/java/util/Locale.html#US">US locale</a>.</div>
+<div class="block">提供除以下区域设置之外的区域设置数据<a href="java.base/java/util/Locale.html#US">美国地区</a>.</div>
 </div>
 <div class="col-first odd-row-color all-modules-table all-modules-table-tab2"><a href="jdk.management/module-summary.html">jdk.management</a></div>
 <div class="col-last odd-row-color all-modules-table all-modules-table-tab2">
-<div class="block">Defines JDK-specific management interfaces for the JVM.</div>
+<div class="block">为JVM定义JDK特定的管理接口。</div>
 </div>
 <div class="col-first even-row-color all-modules-table all-modules-table-tab2"><a href="jdk.management.agent/module-summary.html">jdk.management.agent</a></div>
 <div class="col-last even-row-color all-modules-table all-modules-table-tab2">
-<div class="block">Defines the JMX management agent.</div>
+<div class="block">定义JMX管理代理。</div>
 </div>
 <div class="col-first odd-row-color all-modules-table all-modules-table-tab2"><a href="jdk.management.jfr/module-summary.html">jdk.management.jfr</a></div>
 <div class="col-last odd-row-color all-modules-table all-modules-table-tab2">
-<div class="block">Defines the Management Interface for JDK Flight Recorder.</div>
+<div class="block">定义JDK飞行记录器的管理接口</div>
 </div>
 <div class="col-first even-row-color all-modules-table all-modules-table-tab2"><a href="jdk.naming.dns/module-summary.html">jdk.naming.dns</a></div>
 <div class="col-last even-row-color all-modules-table all-modules-table-tab2">
-<div class="block">Provides the implementation of the DNS Java Naming provider.</div>
+<div class="block">提供DNS Java命名提供程序的实现。</div>
 </div>
 <div class="col-first odd-row-color all-modules-table all-modules-table-tab2"><a href="jdk.naming.rmi/module-summary.html">jdk.naming.rmi</a></div>
 <div class="col-last odd-row-color all-modules-table all-modules-table-tab2">
-<div class="block">Provides the implementation of the RMI Java Naming provider.</div>
+<div class="block">提供RMI Java命名提供程序的实现。</div>
 </div>
 <div class="col-first even-row-color all-modules-table all-modules-table-tab2"><a href="jdk.net/module-summary.html">jdk.net</a></div>
 <div class="col-last even-row-color all-modules-table all-modules-table-tab2">
-<div class="block">Defines the JDK-specific Networking API.</div>
+<div class="block">定义特定于JDK的网络API。</div>
 </div>
 <div class="col-first odd-row-color all-modules-table all-modules-table-tab2"><a href="jdk.nio.mapmode/module-summary.html">jdk.nio.mapmode</a></div>
 <div class="col-last odd-row-color all-modules-table all-modules-table-tab2">
-<div class="block">Defines JDK-specific file mapping modes.</div>
+<div class="block">定义JDK特定的文件映射模式。</div>
 </div>
 <div class="col-first even-row-color all-modules-table all-modules-table-tab2"><a href="jdk.sctp/module-summary.html">jdk.sctp</a></div>
 <div class="col-last even-row-color all-modules-table all-modules-table-tab2">
-<div class="block">Defines the JDK-specific API for SCTP.</div>
+<div class="block">为SCTP定义特定于JDK的API。</div>
 </div>
 <div class="col-first odd-row-color all-modules-table all-modules-table-tab2"><a href="jdk.security.auth/module-summary.html">jdk.security.auth</a></div>
 <div class="col-last odd-row-color all-modules-table all-modules-table-tab2">
-<div class="block">Provides implementations of the <code>javax.security.auth.*</code>
- interfaces and various authentication modules.</div>
+<div class="block">提供<code>javax.security.auth.*</code>的实现
+接口和各种认证模块。</div>
 </div>
 <div class="col-first even-row-color all-modules-table all-modules-table-tab2"><a href="jdk.security.jgss/module-summary.html">jdk.security.jgss</a></div>
 <div class="col-last even-row-color all-modules-table all-modules-table-tab2">
-<div class="block">Defines JDK extensions to the GSS-API and an implementation of the SASL
- GSSAPI mechanism.</div>
+<div class="block">定义GSS-API的JDK扩展和SASL的实现
+GSSAPI机制。</div>
 </div>
 <div class="col-first odd-row-color all-modules-table all-modules-table-tab2"><a href="jdk.xml.dom/module-summary.html">jdk.xml.dom</a></div>
 <div class="col-last odd-row-color all-modules-table all-modules-table-tab2">
-<div class="block">Defines the subset of the W3C Document Object Model (DOM) API that is not part
- of the Java SE API.</div>
+<div class="block">定义不是W3C文档对象模型（DOM）API一部分的子集
+的Java SE API。</div>
 </div>
 <div class="col-first even-row-color all-modules-table all-modules-table-tab2"><a href="jdk.zipfs/module-summary.html">jdk.zipfs</a></div>
 <div class="col-last even-row-color all-modules-table all-modules-table-tab2">
-<div class="block">Provides the implementation of the Zip file system provider.</div>
+<div class="block">提供Zip文件系统提供程序的实现</div>
 </div>
 </div>
 </div>
